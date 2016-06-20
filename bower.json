@@ -1,0 +1,16 @@
+{
+  "name": "ikon-sass",
+  "homepage": "https://github.com/kaushikvinaytg/ikon-sass",
+  "authors": [
+    "kaushik vinay TG <kaushik@recroup.com>"
+  ],
+  "description": "Custom made icons for Recroup with sass support",
+  "main": "sass/ikon.sass",
+  "keywords": [
+    "sass",
+    "icon",
+    "recroup"
+  ],
+  "license": "MIT",
+  "private": true
+}

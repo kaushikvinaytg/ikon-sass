@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'ikon';
+  src: url('#{$ikon-font-path}/ikon.eot?-wqk2e0');
+  src: url('#{$ikon-font-path}/ikon.eot?#iefix-wqk2e0') format('embedded-opentype'),
+    url('#{$ikon-font-path}/ikon.woff?-wqk2e0') format('woff'),
+    url('#{$ikon-font-path}/ikon.ttf?-wqk2e0') format('truetype'),
+    url('#{$ikon-font-path}/ikon.svg?-wqk2e0#ikon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.ikon {
+  font-family: 'ikon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@each $item in $ikon-set {
+  $name: nth($item, 1);
+  $code: nth($item, 2);
+
+  .ikon-#{$name} {
+    &:before {
+      content: "#{$code}";
+    }
+  }
+}
+
+
+
